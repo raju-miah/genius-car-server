@@ -68,7 +68,7 @@ async function run() {
             // console.log(req.query.email);
             // console.log(req.headers.authorization);
             const decoded = req.decoded;
-            console.log('inside orders api', decoded);
+            // console.log('inside orders api', decoded);
 
             if (decoded.email !== req.query.email) {
                 res.status(403).send({ message: 'unAuthorized access' })
